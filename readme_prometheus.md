@@ -1,75 +1,76 @@
-# Prometheus Bounties Platform 🚀
+# Prometheus Swarm Bounties Platform 🚀
 
 ## Project Overview
 
-Prometheus Bounties is a decentralized task management and reward platform designed to facilitate collaborative problem-solving and incentivize open-source contributions across various technology projects. This template provides a standardized approach to tracking and managing bounty-based tasks within the GitHub ecosystem.
+Prometheus Swarm Bounties is a decentralized, collaborative platform for tracking and managing open-source bounties across multiple GitHub repositories. This platform enables transparent task management, reward tracking, and community-driven problem-solving.
 
-### Key Features
-- Transparent bounty tracking
-- Multi-project support
-- Flexible task categorization
-- Transaction hash verification
-- Status tracking for bounty tasks
+### Current Bounties
+
+| GitHub URL | Bounty Task | Project Name | Description | Bounty Amount | Bounty Type | Transaction Hash | Status |
+|------------|------------|--------------|-------------|---------------|-------------|------------------|--------|
+| [Koii DumperCoin](https://github.com/alexander-morris/koii-dumper-reveal) | Feature Maker | Koii DumperCoin | Build out the MVP of the wallet analysis tools | 25 | USDC | 0x8f7c7f8d6d17aa4d9671123e28d601c64bdcd91bbc18e5bfd1a4c4fc027ca2f6 | Initialized |
+| [Koii Improvement Proposals](https://github.com/koii-network/koii-improvement-proposals) | Feature Maker | KIPs | Review and summarize existing issues for the repository README | 1 | USDC | 0xe8bfeac2b38bc9ae0f4199f09d94669a7bbdd5eaf35fc7b7031dde8b89324d67 | Initialized |
 
 ## Getting Started
 
 ### Prerequisites
 - GitHub Account
 - Basic understanding of markdown tables
-- Optional: Blockchain wallet for receiving bounties
+- Recommended: Blockchain wallet for receiving bounties
 
-### Setup Instructions
-1. Clone the repository:
-```bash
-git clone https://github.com/your-org/prometheus-bounties.git
-cd prometheus-bounties
+### Quick Setup
+1. Review the existing bounty table
+2. Understand the column structure
+3. Add or update bounties as needed
+
+## Features / Capabilities
+
+- **Transparent Bounty Tracking**: Clear, markdown-based bounty management
+- **Multi-Project Support**: Track bounties across different GitHub repositories
+- **Flexible Task Categorization**: Support for various task types (e.g., Feature Maker, Bug Hunter)
+- **Transaction Verification**: Include blockchain transaction hashes for accountability
+- **Status Tracking**: Monitor the progress of each bounty
+
+## Project Structure
+
+```
+.
+├── README.md             # Main bounty tracking document
+├── example_info.md       # Example bounty information template
+└── readme_prometheus.md  # Detailed project documentation
 ```
 
-2. Configure Your Bounty Tracking
-- Open the README.md or create a new markdown file
-- Use the provided table structure to log bounty details
+## Technologies Used
 
-## Bounty Table Structure
+- **Platform**: GitHub
+- **Tracking**: Markdown Tables
+- **Reward Mechanisms**: Cryptocurrency (USDC, ERC-20 tokens)
+- **Collaboration**: Open-source community-driven
 
-The core of Prometheus Bounties is the markdown table with the following columns:
+## Bounty Table Columns Explained
 
 | Column | Description | Example |
 |--------|-------------|---------|
-| GitHub URL | Direct link to the project repository | `https://github.com/project/repo` |
-| Bounty Task | Type or category of task | `feature-maker`, `bug-hunter` |
+| GitHub URL | Direct link to the project repository | `https://github.com/koii-network/...` |
+| Bounty Task | Type or category of task | `Feature Maker`, `Bug Hunter` |
 | Project Name | Short project identifier | `Koii DumperCoin` |
 | Description | Detailed task explanation | `Build wallet analysis tools` |
 | Bounty Amount | Reward value | `25` |
-| Bounty Type | Cryptocurrency or token type | `USDC`, `ERC-20`, `KOII` |
+| Bounty Type | Cryptocurrency or token type | `USDC` |
 | Transaction Hash | Blockchain transaction reference | `0x8f7c7f8d...` |
-| Status | Current task state | `Initialized`, `In Progress`, `Completed` |
+| Status | Current task state | `Initialized` |
 
-## Customization Guide
+## Usage Examples
 
-### Adapting the Template
-- Replace placeholder data with your specific bounty information
-- Customize column headers if needed
-- Add more detailed descriptions
+1. Add a new bounty:
+   - Fork the repository
+   - Edit the markdown table in `README.md`
+   - Add a new row with bounty details
+   - Submit a pull request
 
-### Best Practices
-- Keep descriptions clear and concise
-- Use consistent formatting
-- Update status regularly
-- Verify transaction hashes
-
-## Use Cases
-
-Prometheus Bounties is ideal for:
-- Open-source project task management
-- Decentralized collaboration
-- Incentivizing software development
-- Community-driven problem solving
-
-## Technologies Leveraged
-- Markdown
-- GitHub
-- Blockchain transaction tracking
-- Cryptocurrency reward mechanisms
+2. Update bounty status:
+   - Modify the status column
+   - Provide context in the pull request description
 
 ## Contributing
 
@@ -79,18 +80,22 @@ Contributions are welcome! To add or update bounties:
 3. Update the bounty table
 4. Submit a pull request
 
-## Example Bounty Entry
+## Project Status
 
-```markdown
-| GitHub URL | Bounty Task | Project Name | Description | Bounty Amount | Bounty Type | Transaction Hash | Status |
-|------------|-------------|--------------|-------------|---------------|-------------|------------------|--------|
-| https://github.com/example/repo | feature-maker | Project X | Implement authentication module | 50 | USDC | 0x123abc... | Initialized |
-```
+**Current State**: Alpha / Experimental
+- Basic functionality implemented
+- Open for community contributions and improvements
 
 ## License
 
-This project is open-source. See the LICENSE file for details.
+Open-source project. Specific license details to be determined.
 
 ## Disclaimer
 
-Bounty amounts and statuses are subject to change. Always verify current details directly with the project administrators.
+- Bounty amounts and statuses are subject to change
+- Always verify current details with project administrators
+- Participation is voluntary and at the participant's own risk
+
+---
+
+*Last Updated: May 2023*
